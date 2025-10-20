@@ -9,7 +9,7 @@ def divide(a, b):
     if b != 0:
         return a / b
     else:
-        return "Error! Division by zero."
+        return "Error! Division by zero isn't possible."
     
 
 print("-----Simple Calculator----- ")
@@ -40,3 +40,4 @@ while True:
             print(f"{num1} / {num2} = {divide(num1, num2)}")
     else: 
         print("Invalid input. Please select a valid operation.")
+
