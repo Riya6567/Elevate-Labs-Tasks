@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Riya Dey | Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="shortcut icon" href="../static/images/portfolio.png" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed top-0 w-full z-10">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-indigo-600">Riya Dey</h1>
+            <nav class="hidden md:flex space-x-6 font-medium">
+                <a href="#home" class="hover:text-indigo-600">Home</a>
+                <a href="#about" class="hover:text-indigo-600">About</a>
+                <a href="#skills" class="hover:text-indigo-600">Skills</a>
+                <a href="#projects" class="hover:text-indigo-600">Projects</a>
+                <a href="#resume" class="hover:text-indigo-600">Resume</a>
+                <a href="#contact" class="hover:text-indigo-600">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section id="home" class="flex flex-col md:flex-row items-center justify-between max-w-6xl mx-auto px-6 pt-28 pb-20">
+        <div class="md:w-1/2">
+            <h2 class="text-4xl md:text-5xl font-bold mb-4 text-indigo-600">Hi, I'm Riya Dey</h2>
+            <p class="text-lg mb-6 text-gray-700">A passionate <span class="text-indigo-600 font-semibold">Python Developer</span> who loves creating real-world applications.</p>
+            <a href="https://github.com/Riya6567" target="_blank" class="bg-indigo-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-indigo-800 transition">View My Work</a>
+        </div>
+        <img src="{{ url_for('static', filename='images/profile.png') }}" alt="Profile" class="w-64 md:w-80 mt-10 md:mt-0 rounded-full shadow-lg">
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 px-6 bg-gray-100 text-center">
+        <h3 class="text-3xl font-bold mb-8 text-indigo-600">About Me</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/219/219969.png" alt="Profile" class="w-40 mx-auto rounded-full mb-6 shadow-md">
+        <p class="max-w-3xl mx-auto text-lg text-gray-700">
+            I’m a 3rd-year BCA student from Brainware University and an aspiring Python developer with a strong interest in Machine Learning, Deep Learning and basic knowledge of web development.
+        </p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="py-16 px-6 text-center">
+        <h3 class="text-3xl font-bold mb-10 text-indigo-600">My Skills</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+            <div class="p-4 bg-white rounded-xl shadow hover:shadow-lg transition">Python</div>
+            <div class="p-4 bg-white rounded-xl shadow hover:shadow-lg transition">C Programming</div>
+            <div class="p-4 bg-white rounded-xl shadow hover:shadow-lg transition">JAVA</div>
+            <div class="p-4 bg-white rounded-xl shadow hover:shadow-lg transition">HTML5</div>
+            <div class="p-4 bg-white rounded-xl shadow hover:shadow-lg transition">Tailwind CSS</div>
+            <div class="p-4 bg-white rounded-xl shadow hover:shadow-lg transition">JavaScript</div>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-16 px-6 bg-gray-100 text-center">
+        <h3 class="text-3xl font-bold mb-10 text-indigo-600">My Projects</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <!-- project 1 -->
+            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <img src="../static/images/calculator (1).png" alt="Project 1" class="w-16 mx-auto mb-4">
+                <h4 class="text-xl font-semibold mb-2">Calculator</h4>
+                <p class="text-gray-700 mb-4">A simple calculator web application built using HTML, CSS, and JavaScript.</p>
+                <a href="https://github.com/Riya6567/CodSoft/tree/main/Web%20Development/Level-1-Task-3-Calculator" target="_blank" class="bg-indigo-600 text-white px-8 py-2 rounded-lg font-semibold hover:bg-indigo-800 transition">View</a>
+            </div>
+
+            <!-- project 2 -->
+            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <img src="https://cdn-icons-png.flaticon.com/512/2920/2920226.png" alt="Project 2" class="w-16 mx-auto mb-4">
+                <h4 class="text-xl font-semibold mb-2">To-Do List App</h4>
+                <p class="text-gray-700 mb-4">Python app using Flask and JSON to manage daily tasks.</p>
+                <a href="https://github.com/Riya6567/Elevate-Labs-Tasks/tree/main/Task-2%20ToDo" target="_blank" class="bg-indigo-600 text-white px-8 py-2 rounded-lg font-semibold hover:bg-indigo-800 transition">View</a>
+            </div>
+
+            <!-- project 3 -->
+            <div class="bg-white p-6 rounded-2xl shadow hover:shadow-lg transition">
+                <img src="../static/images/drugs.png" alt="Project 3" class="w-16 mx-auto mb-4">
+                <h4 class="text-xl font-semibold mb-2">PharmaStock</h4>
+                <p class="text-gray-700 mb-4">Web-based pharmacy management UI built with Tailwind CSS.</p>
+                <a href="https://github.com/Riya6567/CodSoft/tree/main/Web%20Development/Level-1-Task-2-Landing-Page" target="_blank" class="bg-indigo-600 text-white px-8 py-2 rounded-lg font-semibold hover:bg-indigo-800 transition">View</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-16 px-6 text-center">
+        <h3 class="text-3xl font-bold mb-8 text-indigo-600">My Resume</h3>
+        <p class="mb-6 text-gray-700">Download my resume to learn more about my education and experience.</p>
+        <a href="../Riya_Dey_PythonDev_CV.pdf" download class="bg-indigo-600 text-white px-8 py-3 rounded-lg font-semibold hover:bg-indigo-800 transition">Download Resume</a>
+    </section>
+
+
+    <!-- Contact -->
+    <section id="contact" class="py-16 px-6 bg-gray-100 text-center">
+        <h3 class="text-3xl font-bold mb-8 text-indigo-600">Contact Me</h3>
+
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    <div class="max-w-md mx-auto mb-6 p-4 rounded text-white bg-green-500">{{ message }}</div>
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
+
+        <form action="/contact" method="POST" class="max-w-md mx-auto bg-white p-6 rounded-xl shadow">
+            <input type="text" name="name" placeholder="Your Name" required class="w-full mb-4 p-3 border rounded">
+            <input type="email" name="email" placeholder="Your Email" required class="w-full mb-4 p-3 border rounded">
+            <textarea name="message" rows="4" placeholder="Your Message" required class="w-full mb-4 p-3 border rounded"></textarea>
+            <button type="submit" class="bg-indigo-600 text-white px-6 py-2 rounded hover:bg-indigo-800 transition">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-indigo-600 text-white py-6 text-center">
+        <p>&copy; 2025 Riya Dey. All rights reserved.</p>
+    </footer>
+</body>
+</html>
