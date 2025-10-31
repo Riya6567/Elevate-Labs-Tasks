@@ -1,6 +1,7 @@
 # 🧠 Task 8: Build a Chatbot using if-else
 ## 🎯 Objective
 Create a simple **rule-based chatbot** using Python that interacts with users through basic conversation logic.
+
 ---
 
 ## 🧰 Tools & Technologies
@@ -21,5 +22,3 @@ It simulates a text-based conversation by responding to user inputs based on pre
 - Input Handling (`input()` function)
 - String Matching and Conditions
 ---
-    else:
-        print("ChatSpark: I'm not sure I understand. Could you please rephrase?")
